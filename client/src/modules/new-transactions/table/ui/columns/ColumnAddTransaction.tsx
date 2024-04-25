@@ -1,6 +1,5 @@
 import { Row, Table } from "@tanstack/react-table"
 import { Person } from "@/entities/persons/model"
-import { Checkbox } from "@/shared/ui/checkbox"
 import * as React from "react"
 import { useState } from "react"
 import { Label } from "@/shared/ui/label"
@@ -80,7 +79,7 @@ export const ColumnAddTransactionCell = ({ row }: { row: Row<Person> }) => {
   return (
     <div className="text-right">
       <Button
-        variant="ghost"
+        variant="outline"
         size="sm"
         className="gap-2"
         onClick={() => addTransaction({ personId: row.original.id })}

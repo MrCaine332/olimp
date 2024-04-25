@@ -1,0 +1,1 @@
+export { NewTransactionsBank } from "./NewTransactionsBank"

@@ -6,8 +6,10 @@ export const NewTransactionsBank = () => {
 
   useEffect(() => {
     const getBankData = async () => {
-      const data = await bankApi.getBankBalance()
-      setBank(data.balance)
+      try {
+        const data = await bankApi.getBankBalance()
+        setBank(data.balance)
+      } catch (e) {}
     }
     getBankData()
 

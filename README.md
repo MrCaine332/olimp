@@ -19,10 +19,17 @@ As stated in the requirements, I tried to avoid adding new dependencies as much 
 - After cloning repository, move to the ***client*** folder by command ```cd ./client```.
 - Once in the ***client*** directory, use ```npm install``` command to install all dependencies.
 - Use ```npm run start``` command to start the project
+- App will launch on [localhost:3000](http://localhost:3000)
 
 ### Backend Side:
 - After cloning repository, move to the ***server*** folder by command ```cd ./server```.
 - Once in the ***server*** directory, use ```npm install``` command to install all dependencies.
+- add ```.env``` file with the following fields to the server root (replace values with yours):
+  - POSTGRES_HOST='<db-host>'
+  - POSTGRES_PORT=<db-port>
+  - POSTGRES_USERNAME='<db-username>'
+  - POSTGRES_PASSWORD='<db-password>'
+  - POSTGRES_DATABASE='<db-name>'
 - Use ```npm run start``` command to start the project
 
 ## Design Choices:

@@ -13,8 +13,6 @@ Then, amount might be adjusted with the input in the header of the table. Once p
 - After transactions are sent and processed, user will be able to see successful and failed transactions, as well as to add new transactions for the next submission.
 
 ## Setup Instructions:
-As stated in the requirements, I tried to avoid adding new dependencies as much as possible. Ultimately, I ended up with 7 dependencies:
-
 ### Client Side:
 - After cloning repository, move to the ***client*** folder by command ```cd ./client```.
 - Once in the ***client*** directory, use ```npm install``` command to install all dependencies.
@@ -31,12 +29,3 @@ As stated in the requirements, I tried to avoid adding new dependencies as much 
   - POSTGRES_PASSWORD='db-password'
   - POSTGRES_DATABASE='db-name'
 - Use ```npm run start``` command to start the project
-
-## Design Choices:
-As written in the requirements, I have attempted to keep simple and intuitive User Interface. I chose table to be main ***body*** of the application.
-I believe, expandable table in this case serves quite well. 
-
-Speaking about styling, I chose ***shadcn/ui*** for UI components and ***TailwindCSS*** for styling. Together, they allow
-fast and efficient development of interactive and visually pleasant components.
-
-Unfortunately, UI was not made to properly work on mobile devices, hence, I recommend to use desktop option.
